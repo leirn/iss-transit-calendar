@@ -1,0 +1,14 @@
+# Core: transit computation (transit_finder.py) and ephemerides
+skyfield
+numpy
+requests
+
+# Corridor maps (used by transit_finder.py; skip them with --no-maps)
+matplotlib
+contextily
+pyproj
+
+# Google Calendar and Drive APIs
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
