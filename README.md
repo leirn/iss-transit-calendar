@@ -29,7 +29,7 @@ Transits are computed locally by [beschne/transit-finder](https://github.com/bes
 ## Installation
  
 ```bash
-git clone https://github.com/<your-user>/iss-transit-calendar.git
+git clone https://github.com/leirn/iss-transit-calendar.git
 cd iss-transit-calendar
 python3 -m venv venv && . venv/bin/activate
 pip install -r requirements.txt
@@ -98,8 +98,6 @@ Exit codes: `0` success, `1` computation failed (calendar untouched), `2` Google
 15 3 * * * cd /opt/iss-transit-calendar && ./venv/bin/python iss_transit_calendar.py \
     --lat 48.85 --lon 2.35 --radius 50 --days 30 --name "Home" --tz Europe/Paris >> run.log 2>&1
 ```
- 
-Synology Task Scheduler (or any other scheduler) works the same way. The search can take a while with a fine grid and a large radius; a lock file prevents a new run from starting while the previous one is still going. Time a `--days 7 --dry-run` run first and extrapolate.
  
 ## How the search differs from the original transit-finder
  
