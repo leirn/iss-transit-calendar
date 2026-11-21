@@ -109,6 +109,7 @@ Exit codes: `0` success, `1` computation failed (calendar untouched), `2` Google
 15 3 * * * cd /opt/iss-transit-calendar && ./venv/bin/python iss_transit_calendar.py \
     --lat 48.85 --lon 2.35 --radius 50 --days 30 --name "Home" --tz Europe/Paris >> run.log 2>&1
 ```
+<<<<<<< HEAD
 
 Synology Task Scheduler (or any other scheduler) works the same way. The search can take a while with a fine grid and a large radius; a lock file prevents a new run from starting while the previous one is still going. Time a `--days 7 --dry-run` run first and extrapolate.
 
@@ -132,6 +133,9 @@ How it shows up in the calendar:
 
 The rating is refreshed on every run. When only the weather changed (level change, or sky cover moved by 15 points or more), the title, colour and description are patched and the map is left alone. If the weather service is unreachable, events are still created and updated, just without a rating.
 
+=======
+ 
+>>>>>>> 9f499b3ab0dee56a1716e1c1a0b29a975639420f
 ## How the search differs from the original transit-finder
 
 The original tool tests the centre plus 8 points on the circle's circumference. For this use case that is not enough:
@@ -160,5 +164,11 @@ The original tool tests the centre plus 8 points on the circle's circumference. 
 - [Open-Meteo](https://open-meteo.com/) for the weather forecasts (CC BY 4.0 data).
 
 ## License
+<<<<<<< HEAD
 
 [MIT](LICENSE)
+=======
+ 
+[MIT](LICENSE)
+ 
+>>>>>>> 9f499b3ab0dee56a1716e1c1a0b29a975639420f
